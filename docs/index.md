@@ -20,13 +20,20 @@ For custom layout, sidebars, etc, edit [`index.html`](index.html).
 Untar the package into any directory that serves out HTML. You will see the directory
 structure:
 
+    ./LICENSE
+    ./docs/about.md
+    ./docs/footer.md
+    ./docs/header.md
+    ./docs/index.md
+    ./docs/license.md
+    ./docs/notfound.md
+    ./docs/sidebar.md
+    ./docs/todo.md
+    ./index.css
+    ./index.html
     ./js/index.js
     ./js/jquery2.js
     ./js/Markdown.Converter.js
-    ./index.css
-    ./index.html
-    ./docs/index.md
-    ./docs/todo.md
 
 The files in `docs` can all be deleted and replaced with your own content. By default
 `index.md` is served out.
