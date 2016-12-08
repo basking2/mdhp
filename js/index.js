@@ -24,7 +24,18 @@ $(function() {
           var md = new Markdown.Converter();
           var  t = md.makeHtml(data);
           $('#content').html(t)
-          document.title=docmd
+          if ($('#title')[0]) {
+            document.title = $('#title').text()
+          }
+          else if ($('#hidden-title')[0]) {
+            document.title = $('#hidden-title').text()
+          }
+          else if ($('h1')[0]) {
+            document.title = $('h1').text()
+          }
+          else {
+            document.title=docmd
+          }
       }
     ).fail(function() {
         $('#content').html('Document '+docmd+' not found.');

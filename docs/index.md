@@ -15,6 +15,13 @@ For custom styling, edit [`index.css`](index.css).
 
 For custom layout, sidebars, etc, edit [`index.html`](index.html).
 
+To give a document a title you have 3 options.
+
+1. Create a tag with an id of `title` and it will be used as the document title.
+2. Create a tag with an id of `hidden-title` and it will be used as the
+   document title *and* it will be hidden by the style sheet.
+3. If there is no `title` or `hidden-title` tag the first `h1` tag is used.
+
 ## How Do I Deploy This?
 
 Untar the package into any directory that serves out HTML. You will see the directory
@@ -38,12 +45,16 @@ structure:
 The files in `docs` can all be deleted and replaced with your own content. By default
 `index.md` is served out.
 
+### lighttp
+
+For convenience a `lighttp.conf` file is provided to serve this site.
+
 ## Advanced
 
 Also included are the [`header.md`][header], [`footer.md`][footer], and [`sidebar.md`][sidebar]
 files which are automatically loaded into HTML divs with the id `header`, `footer`, and `sidebar`,
 respectively. Personally, I like a clean, empty site, so I remove these, but you're welcome
-to customze this as you like. 
+to customze this as you like.
 
 ## What's Here
 
